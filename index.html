@@ -1526,6 +1526,7 @@ function hideHoverCard() {
 }
 
 // ─── CUSTOM MARKERS ───────────────────────────────────────────
+function addParkMarkers() {
 parks.forEach(park => {
   // Skip non-contiguous parks that are way off the main US map
   const skipPark = ['American Samoa', 'Virgin Islands'].some(n => park.name === n);
@@ -1577,6 +1578,7 @@ parks.forEach(park => {
     }
   });
 });
+}
 
 // ─── SIDEBAR ──────────────────────────────────────────────────
 const sidebar = document.getElementById('sidebar');
@@ -1653,6 +1655,7 @@ document.getElementById('map').addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
   initMap();
+  addParkMarkers();
 });
 </script>
 </body>
