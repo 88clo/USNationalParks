@@ -605,7 +605,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 /* ─── HOVER CARD ─────────────────────────────────────────── */
 .hover-card-overlay {
   position: absolute;
-  z-index: 1000;
+  z-index: 20;
   pointer-events: none;
   width: 240px;
 }
@@ -840,37 +840,37 @@ const parks = [
     img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6c00a30a94f73563cf8feecf0af55c75d630ba8b.jpg",
     attractions: [
       { name: "Badlands Loop Road (Hwy 240)", desc: "A 31-mile scenic drive through an otherworldly landscape of eroded buttes, spires and pinnacles glowing in shades of red, orange and purple at sunrise.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/88e203514582e7103620cb6fc7dd3e2776fbd401.jpg" },
-      { name: "Bison & Wildlife at Sage Creek Rim", desc: "The remote Sage Creek Wilderness harbors the largest bison herd in the park — over 1,200 bison roam freely alongside black-footed ferrets and bighorn sheep.", img: "https://picsum.photos/seed/badlands-bison/600/400" }
+      { name: "Bison & Wildlife at Sage Creek Rim", desc: "The remote Sage Creek Wilderness harbors the largest bison herd in the park — over 1,200 bison roam freely alongside black-footed ferrets and bighorn sheep.", img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Badlands_National_Park%2C_South_Dakota.jpg" }
     ],
     bestTime: "May – Sep", bestTimeTip: "Late May and September offer pleasant temperatures with vivid colors and active wildlife. Summer thunderstorms create dramatic skies over the formations.",
     nearestCity: "Rapid City, SD (RAP)", flightTime: "~4–5h (1 stop)", flightCost: "$200–450", flightNote: "Direct flights from NYC to Rapid City (RAP) are available on some days. Park is ~1h drive west of Rapid City."
   },
   {
     name: "Big Bend", state: "Texas", lat: 29.25, lng: -103.25,
-    img: "https://picsum.photos/seed/bigbend-texas/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/551859a966ee5da1eb7e50363b42d220ef1be545.jpg",
     attractions: [
-      { name: "Santa Elena Canyon", desc: "Towering 1,500-foot limestone walls rise from the Rio Grande, forming one of the most dramatic canyons in North America — accessible by canoe or short hike.", img: "https://picsum.photos/seed/santa-elena/600/400" },
-      { name: "Emory Peak & Chisos Mountains", desc: "The 7,832-foot summit of Emory Peak offers sweeping views of the Chihuahuan Desert and across the border into Mexico — some of Texas's finest high-elevation hiking.", img: "https://picsum.photos/seed/chisos-mountains/600/400" }
+      { name: "Santa Elena Canyon", desc: "Towering 1,500-foot limestone walls rise from the Rio Grande, forming one of the most dramatic canyons in North America — accessible by canoe or short hike.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1767afbbcfddd58079c4cc2a80743c0942fa1b6c.jpg" },
+      { name: "Emory Peak & Chisos Mountains", desc: "The 7,832-foot summit of Emory Peak offers sweeping views of the Chihuahuan Desert and across the border into Mexico — some of Texas's finest high-elevation hiking.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/551859a966ee5da1eb7e50363b42d220ef1be545.jpg" }
     ],
     bestTime: "Oct – Apr", bestTimeTip: "Desert summers exceed 110°F — avoid June to September. November through February brings cool days (60–75°F) and the best stargazing, as Big Bend has some of the darkest skies in the US.",
     nearestCity: "Midland, TX (MAF)", flightTime: "~4–5h (1 stop)", flightCost: "$250–500", flightNote: "Fly into Midland (MAF) or El Paso (ELP), both ~3–4h drive to park. Very remote — plan for a rental car."
   },
   {
     name: "Biscayne", state: "Florida", lat: 25.65, lng: -80.08,
-    img: "https://picsum.photos/seed/biscayne-florida/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/99ab3a08875a25d6874411606907f0834938ef20.jpg",
     attractions: [
-      { name: "Coral Reef Snorkeling & Diving", desc: "A pristine living coral reef — the third largest in the world — teems with sea turtles, tropical fish, and rays. 95% of the park is underwater.", img: "https://picsum.photos/seed/biscayne-reef/600/400" },
-      { name: "Elliott Key & Maritime Heritage Trail", desc: "Paddle through mangrove tunnels to Elliott Key, a wild barrier island, and explore an underwater shipwreck trail with seven historic vessels.", img: "https://picsum.photos/seed/elliott-key/600/400" }
+      { name: "Coral Reef Snorkeling & Diving", desc: "A pristine living coral reef — the third largest in the world — teems with sea turtles, tropical fish, and rays. 95% of the park is underwater.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/805ddfd387fdf33a9024dd1d17b5d8104e3b2204.jpg" },
+      { name: "Elliott Key & Maritime Heritage Trail", desc: "Paddle through mangrove tunnels to Elliott Key, a wild barrier island, and explore an underwater shipwreck trail with seven historic vessels.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/99ab3a08875a25d6874411606907f0834938ef20.jpg" }
     ],
     bestTime: "Dec – Apr", bestTimeTip: "Winter dry season offers crystal-clear water visibility (up to 30 feet), calm seas, and minimal mosquitoes. Summer is hot and humid with frequent afternoon storms.",
     nearestCity: "Miami, FL (MIA)", flightTime: "~3h (direct)", flightCost: "$120–300", flightNote: "Many direct flights NYC to Miami (MIA). Park is ~25 miles south of Miami — only accessible by boat; take the park ferry."
   },
   {
     name: "Black Canyon of the Gunnison", state: "Colorado", lat: 38.57, lng: -107.72,
-    img: "https://picsum.photos/seed/black-canyon/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4ab13e48437dd198091c6a044933290cce2f6b69.jpg",
     attractions: [
-      { name: "South Rim Drive Overlooks", desc: "Thirteen jaw-dropping overlooks along the rim reveal 2,250 feet of sheer dark Precambrian rock — some of the steepest canyon walls in North America.", img: "https://picsum.photos/seed/black-canyon-rim/600/400" },
-      { name: "Painted Wall", desc: "At 2,250 feet tall, Painted Wall is Colorado's tallest cliff — streaked with pink pegmatite dikes that zigzag across its ancient gneiss face like abstract art.", img: "https://picsum.photos/seed/painted-wall/600/400" }
+      { name: "South Rim Drive Overlooks", desc: "Thirteen jaw-dropping overlooks along the rim reveal 2,250 feet of sheer dark Precambrian rock — some of the steepest canyon walls in North America.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f3d58632d5449a9eac0fab71378ae66ba0329617.jpg" },
+      { name: "Painted Wall", desc: "At 2,250 feet tall, Painted Wall is Colorado's tallest cliff — streaked with pink pegmatite dikes that zigzag across its ancient gneiss face like abstract art.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4ab13e48437dd198091c6a044933290cce2f6b69.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "Late May through September offers open roads and mild weather. The canyon walls glow amber at golden hour. Winter closes many roads but offers solitude.",
     nearestCity: "Grand Junction, CO (GJT)", flightTime: "~4–5h (1 stop)", flightCost: "$200–450", flightNote: "Fly to Denver (DEN) then drive ~4h, or Grand Junction (GJT) ~1.5h drive. Limited service to Montrose (MTJ) nearby."
@@ -887,50 +887,50 @@ const parks = [
   },
   {
     name: "Canyonlands", state: "Utah", lat: 38.20, lng: -109.93,
-    img: "https://picsum.photos/seed/canyonlands-utah/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ffb52e208db8f623c843320dd082542c650d33f2.jpg",
     attractions: [
-      { name: "Mesa Arch at Sunrise", desc: "Watch the sun rise through this iconic arch perched on the edge of a 1,000-foot cliff — the landscape lights fire-red beneath it as dawn breaks over Buck Canyon.", img: "https://picsum.photos/seed/mesa-arch/600/400" },
-      { name: "Island in the Sky White Rim Road", desc: "A challenging 100-mile 4WD loop offering panoramic views of two rivers carving deep into canyon country — the ultimate Southwest off-road adventure.", img: "https://picsum.photos/seed/white-rim-road/600/400" }
+      { name: "Mesa Arch at Sunrise", desc: "Watch the sun rise through this iconic arch perched on the edge of a 1,000-foot cliff — the landscape lights fire-red beneath it as dawn breaks over Buck Canyon.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f88115fdc6cfe690211a0e2389511bf7e04ae3c9.jpg" },
+      { name: "Island in the Sky White Rim Road", desc: "A challenging 100-mile 4WD loop offering panoramic views of two rivers carving deep into canyon country — the ultimate Southwest off-road adventure.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ffb52e208db8f623c843320dd082542c650d33f2.jpg" }
     ],
     bestTime: "Mar – May, Sep – Oct", bestTimeTip: "Spring wildflowers and mild temps make March–May ideal. Fall brings golden cottonwoods along the rivers. The park is large and remote — plan extra time.",
     nearestCity: "Moab, UT (CNY)", flightTime: "~5–6h (1 stop)", flightCost: "$250–500", flightNote: "Same gateway as Arches NP. Fly to Salt Lake City (SLC) and drive ~3.5h, or Grand Junction (GJT) ~1.5h drive."
   },
   {
     name: "Capitol Reef", state: "Utah", lat: 38.20, lng: -111.17,
-    img: "https://picsum.photos/seed/capitol-reef/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a28f294d3fc0ec773d655aa5b4918123ca5c9529.jpg",
     attractions: [
-      { name: "Waterpocket Fold Scenic Drive", desc: "A 25-mile paved road through the heart of the 100-mile monocline — a dramatic wrinkle in Earth's crust exposing a rainbow of ancient rock layers.", img: "https://picsum.photos/seed/waterpocket-fold/600/400" },
-      { name: "Fruita Orchards & Petroglyphs", desc: "Harvest apples and pears from a living pioneer orchard (free to pick!) beside 1,000-year-old Fremont petroglyphs etched into red canyon walls.", img: "https://picsum.photos/seed/fruita-orchards/600/400" }
+      { name: "Waterpocket Fold Scenic Drive", desc: "A 25-mile paved road through the heart of the 100-mile monocline — a dramatic wrinkle in Earth's crust exposing a rainbow of ancient rock layers.", img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Strike_Valley_North%2C_Capitol_Reef_National_Park%2C_Utah.jpg" },
+      { name: "Fruita Orchards & Petroglyphs", desc: "Harvest apples and pears from a living pioneer orchard (free to pick!) beside 1,000-year-old Fremont petroglyphs etched into red canyon walls.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a28f294d3fc0ec773d655aa5b4918123ca5c9529.jpg" }
     ],
     bestTime: "Apr – Jun, Sep – Oct", bestTimeTip: "One of Utah's most overlooked gems. Spring wildflowers and fall colors with minimal crowds make shoulder seasons ideal.",
     nearestCity: "Salt Lake City, UT (SLC)", flightTime: "~5–6h (1 stop)", flightCost: "$220–480", flightNote: "Fly to Salt Lake City (SLC) and drive ~3h south. Many daily direct flights from NYC to SLC."
   },
   {
     name: "Carlsbad Caverns", state: "New Mexico", lat: 32.17, lng: -104.44,
-    img: "https://picsum.photos/seed/carlsbad-caverns/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f67bacdb95c744a562a98c158b7addd96c45de78.jpg",
     attractions: [
-      { name: "The Big Room Self-Guided Tour", desc: "A cathedral-sized cave room nearly 4,000 feet long, adorned with stunning stalactites, stalagmites, and columns formed over 250 million years.", img: "https://picsum.photos/seed/big-room-caverns/600/400" },
-      { name: "Brazilian Free-Tailed Bat Flight", desc: "Every evening from May to October, 250,000+ bats spiral out of the cave entrance in a mesmerizing 30-minute tornado — one of nature's most dramatic spectacles.", img: "https://picsum.photos/seed/bat-flight/600/400" }
+      { name: "The Big Room Self-Guided Tour", desc: "A cathedral-sized cave room nearly 4,000 feet long, adorned with stunning stalactites, stalagmites, and columns formed over 250 million years.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ad9d9749b31a4d7524576520e4fde19cb0e293cd.jpg" },
+      { name: "Brazilian Free-Tailed Bat Flight", desc: "Every evening from May to October, 250,000+ bats spiral out of the cave entrance in a mesmerizing 30-minute tornado — one of nature's most dramatic spectacles.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f67bacdb95c744a562a98c158b7addd96c45de78.jpg" }
     ],
     bestTime: "Sep – Oct", bestTimeTip: "Bat exodus viewing is best in August–October when pups have matured. The cave maintains 56°F year-round, making it pleasant any season.",
     nearestCity: "El Paso, TX (ELP)", flightTime: "~4h (1 stop)", flightCost: "$200–420", flightNote: "Fly to El Paso (ELP) or Midland (MAF), both ~2–3h drive. Direct NYC to El Paso flights available."
   },
   {
     name: "Channel Islands", state: "California", lat: 34.01, lng: -119.42,
-    img: "https://picsum.photos/seed/channel-islands/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c0666439217cfdfeb1d4107f3b0af16739d3ca28.jpg",
     attractions: [
-      { name: "Sea Caves of Santa Cruz Island", desc: "Sea kayak into the world's largest sea cave — Painted Cave — a 1,215-foot deep cavern with vaulted 100-foot ceilings lit by phosphorescent plankton.", img: "https://picsum.photos/seed/sea-caves/600/400" },
-      { name: "Island Fox & Endemic Wildlife", desc: "Spot the miniature island fox (found nowhere else on Earth) up close — it has no fear of humans due to its isolated evolution over 10,000 years.", img: "https://picsum.photos/seed/island-fox/600/400" }
+      { name: "Sea Caves of Santa Cruz Island", desc: "Sea kayak into the world's largest sea cave — Painted Cave — a 1,215-foot deep cavern with vaulted 100-foot ceilings lit by phosphorescent plankton.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ef158f698409ffe2a2e7eb672ce5c2ad4d98216e.jpg" },
+      { name: "Island Fox & Endemic Wildlife", desc: "Spot the miniature island fox (found nowhere else on Earth) up close — it has no fear of humans due to its isolated evolution over 10,000 years.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c0666439217cfdfeb1d4107f3b0af16739d3ca28.jpg" }
     ],
     bestTime: "Apr – Nov", bestTimeTip: "May to July offers prime whale watching (blue and humpback whales) and calm seas. Summer and fall are best for kayaking and snorkeling.",
     nearestCity: "Los Angeles, CA (LAX)", flightTime: "~5.5h (direct)", flightCost: "$150–350", flightNote: "Fly into LAX or Ventura. Ferries depart from Ventura or Oxnard harbors. Advance boat reservations required."
   },
   {
     name: "Congaree", state: "South Carolina", lat: 33.78, lng: -80.78,
-    img: "https://picsum.photos/seed/congaree-swamp/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/30cf60b031977fc590a80005cec65592856f241d.jpg",
     attractions: [
-      { name: "Boardwalk Loop Through Ancient Forest", desc: "A 2.4-mile elevated boardwalk winds through the largest old-growth bottomland hardwood forest in North America, past record-breaking champion trees.", img: "https://picsum.photos/seed/congaree-forest/600/400" },
-      { name: "Synchronous Fireflies (May–June)", desc: "Every spring, thousands of fireflies synchronize their bioluminescent flashes in a rare phenomenon shared with only a handful of places worldwide.", img: "https://picsum.photos/seed/fireflies/600/400" }
+      { name: "Boardwalk Loop Through Ancient Forest", desc: "A 2.4-mile elevated boardwalk winds through the largest old-growth bottomland hardwood forest in North America, past record-breaking champion trees.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9d089b55574b4f4c14b9b29ee8b64b873067c7e1.jpg" },
+      { name: "Synchronous Fireflies (May–June)", desc: "Every spring, thousands of fireflies synchronize their bioluminescent flashes in a rare phenomenon shared with only a handful of places worldwide.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/30cf60b031977fc590a80005cec65592856f241d.jpg" }
     ],
     bestTime: "Mar – May, Oct – Nov", bestTimeTip: "Late May synchronous firefly viewing is extraordinary but requires lottery tickets. Fall canoe trips through the floodplain are serene.",
     nearestCity: "Columbia, SC (CAE)", flightTime: "~2–3h (1 stop)", flightCost: "$150–350", flightNote: "Fly to Columbia (CAE) ~20 miles away, or Charlotte (CLT) ~1.5h. Both have connections from NYC."
@@ -940,17 +940,17 @@ const parks = [
     img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/02fb643f6000e4edbabe60795f448939a4aeb146.jpg",
     attractions: [
       { name: "Rim Drive & Crater Lake Overlooks", desc: "A 33-mile scenic road circling the deepest lake in the US reveals the most impossibly blue water you'll ever see — 1,943 feet deep and astonishingly clear.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/98ec18de72db5a7aac04aa99fdba5bffc7acd305.jpg" },
-      { name: "Wizard Island Boat Tour", desc: "Take a boat to Wizard Island — a cinder cone volcano rising from the center of the lake — and hike to the summit crater for 360° views of the collapsed caldera.", img: "https://picsum.photos/seed/wizard-island/600/400" }
+      { name: "Wizard Island Boat Tour", desc: "Take a boat to Wizard Island — a cinder cone volcano rising from the center of the lake — and hike to the summit crater for 360° views of the collapsed caldera.", img: "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" }
     ],
     bestTime: "Jul – Sep", bestTimeTip: "Heavy snowpack closes Rim Drive until late June or July. Late July is peak season with all roads open. September offers fewer crowds and stunning reflections.",
     nearestCity: "Medford, OR (MFR)", flightTime: "~6h (1 stop)", flightCost: "$250–550", flightNote: "Fly to Medford (MFR) ~1.5h drive, or Eugene (EUG) ~2.5h drive. Both require connections from NYC."
   },
   {
     name: "Cuyahoga Valley", state: "Ohio", lat: 41.24, lng: -81.55,
-    img: "https://picsum.photos/seed/cuyahoga-valley/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c769ebcc1a4f3734c52cecd7d11adff09ccbd40b.jpg",
     attractions: [
-      { name: "Brandywine Falls", desc: "A magnificent 65-foot waterfall cascading over ancient shale ledges — one of the most photographed sites in Ohio, accessible via a short boardwalk trail.", img: "https://picsum.photos/seed/brandywine-falls/600/400" },
-      { name: "Cuyahoga Valley Scenic Railroad", desc: "Board a historic scenic train through fall foliage, past farms, forests, and along the Ohio & Erie Canal Towpath — a rare national park train experience.", img: "https://picsum.photos/seed/cuyahoga-train/600/400" }
+      { name: "Brandywine Falls", desc: "A magnificent 65-foot waterfall cascading over ancient shale ledges — one of the most photographed sites in Ohio, accessible via a short boardwalk trail.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bc485c6d6479cb7b09e1f48bd3508f002350a546.jpg" },
+      { name: "Cuyahoga Valley Scenic Railroad", desc: "Board a historic scenic train through fall foliage, past farms, forests, and along the Ohio & Erie Canal Towpath — a rare national park train experience.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c769ebcc1a4f3734c52cecd7d11adff09ccbd40b.jpg" }
     ],
     bestTime: "Apr – Nov", bestTimeTip: "October is spectacular with peak fall color blazing across 33,000 acres. Spring brings rushing waterfalls swollen with snowmelt.",
     nearestCity: "Cleveland, OH (CLE)", flightTime: "~2h (direct)", flightCost: "$100–280", flightNote: "Fly to Cleveland (CLE) ~30 min drive south, or Akron (CAK) even closer. Direct NYC to Cleveland flights daily."
@@ -960,7 +960,7 @@ const parks = [
     img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/08d3774890f39791f1533a177ef4664aaeae6bed.jpg",
     attractions: [
       { name: "Mesquite Flat Sand Dunes at Sunrise", desc: "Golden dunes glowing in first light against snow-capped Panamint Mountains — one of the most surreal desert landscapes in the American West.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/99c9e2538998a44f7d602e84ad52679e5e2bb9c1.jpg" },
-      { name: "Badwater Basin Salt Flats", desc: "Stand at 282 feet below sea level — the lowest point in North America — on a vast tessellated salt flat stretching to the horizon in every direction.", img: "https://picsum.photos/seed/badwater-basin/600/400" }
+      { name: "Badwater Basin Salt Flats", desc: "Stand at 282 feet below sea level — the lowest point in North America — on a vast tessellated salt flat stretching to the horizon in every direction.", img: "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" }
     ],
     bestTime: "Nov – Mar", bestTimeTip: "Avoid summer (120°F+ temperatures are life-threatening). October to March offers surreal landscapes. Occasional winter rains can trigger spectacular super blooms in February–March.",
     nearestCity: "Las Vegas, NV (LAS)", flightTime: "~5.5h (direct+drive)", flightCost: "$150–350", flightNote: "Fly to Las Vegas (LAS) — many direct flights from NYC — then drive ~2.5h to park entrance. Nearest airport to park."
@@ -977,40 +977,40 @@ const parks = [
   },
   {
     name: "Dry Tortugas", state: "Florida", lat: 24.63, lng: -82.87,
-    img: "https://picsum.photos/seed/dry-tortugas/800/500",
+    img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5b5784327ebb18cd547d6c8236ccf42fe10b0f67.jpg",
     attractions: [
-      { name: "Fort Jefferson & Garden Key", desc: "A massive 19th-century Civil War fort built on a remote coral island — surrounded by turquoise water and accessible only by ferry or seaplane.", img: "https://picsum.photos/seed/fort-jefferson/600/400" },
-      { name: "Crystal-Clear Snorkeling", desc: "Some of the clearest waters in the US National Park system — home to living coral reefs, sea turtles, reef sharks, and over 300 species of fish.", img: "https://picsum.photos/seed/dry-tortugas-snorkel/600/400" }
+      { name: "Fort Jefferson & Garden Key", desc: "A massive 19th-century Civil War fort built on a remote coral island — surrounded by turquoise water and accessible only by ferry or seaplane.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ea5ce5d3c47b3d9cfca340c7b0e50b1ddb3c7ca4.jpg" },
+      { name: "Crystal-Clear Snorkeling", desc: "Some of the clearest waters in the US National Park system — home to living coral reefs, sea turtles, reef sharks, and over 300 species of fish.", img: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5b5784327ebb18cd547d6c8236ccf42fe10b0f67.jpg" }
     ],
     bestTime: "Dec – Apr", bestTimeTip: "Winter brings calm seas and peak water clarity. Summer is extremely hot and hurricane season. Spring brings migrating birds — some of the best birding on Earth.",
     nearestCity: "Key West, FL (EYW)", flightTime: "~3–4h (1 stop)", flightCost: "$200–450", flightNote: "Fly to Key West (EYW) then take the Yankee Freedom Ferry (2.5h) or seaplane. Ferry reservations essential."
   },
   {
     name: "Everglades", state: "Florida", lat: 25.32, lng: -80.93,
-    img: "https://picsum.photos/seed/everglades-airboat/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/90/Everglades_National_Park_pineland.jpg",
     attractions: [
-      { name: "Anhinga Trail & River of Grass", desc: "A 0.8-mile boardwalk through the heart of the 'River of Grass' — America's most unique wetland ecosystem, teeming with alligators, herons, anhingas, and manatees.", img: "https://picsum.photos/seed/anhinga-trail/600/400" },
-      { name: "Flamingo Kayak Tour", desc: "Paddle through pristine mangrove tunnels at the park's remote southern tip, spotting crocodiles, dolphins, roseate spoonbills, and sea turtles.", img: "https://picsum.photos/seed/everglades-kayak/600/400" }
+      { name: "Anhinga Trail & River of Grass", desc: "A 0.8-mile boardwalk through the heart of the 'River of Grass' — America's most unique wetland ecosystem, teeming with alligators, herons, anhingas, and manatees.", img: "https://upload.wikimedia.org/wikipedia/commons/9/90/Everglades_National_Park_pineland.jpg" },
+      { name: "Flamingo Kayak Tour", desc: "Paddle through pristine mangrove tunnels at the park's remote southern tip, spotting crocodiles, dolphins, roseate spoonbills, and sea turtles.", img: "https://upload.wikimedia.org/wikipedia/commons/9/90/Everglades_National_Park_pineland.jpg" }
     ],
     bestTime: "Dec – Apr", bestTimeTip: "Dry season concentrates wildlife around remaining water sources, making winter the best time for viewing. Summer is brutally hot and mosquito-infested.",
     nearestCity: "Miami, FL (MIA)", flightTime: "~3h (direct)", flightCost: "$120–300", flightNote: "Many direct flights NYC to Miami. Park entrance is ~1h southwest of Miami. Rent a car for full exploration."
   },
   {
     name: "Gates of the Arctic", state: "Alaska", lat: 67.78, lng: -153.30,
-    img: "https://picsum.photos/seed/gates-arctic/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Gates_of_the_Arctic_National_Park_and_Preserve.jpg",
     attractions: [
-      { name: "Arctic Wilderness & Midnight Sun", desc: "One of Earth's last truly roadless wildernesses — hike or fly into trackless tundra above the Arctic Circle under the perpetual summer midnight sun.", img: "https://picsum.photos/seed/arctic-tundra/600/400" },
-      { name: "Brooks Range Peaks & Rivers", desc: "Spectacular peaks rising 8,000 feet from valley floors cut by pristine salmon rivers — fly fishing for arctic grayling and char in waters untouched by roads.", img: "https://picsum.photos/seed/brooks-range/600/400" }
+      { name: "Arctic Wilderness & Midnight Sun", desc: "One of Earth's last truly roadless wildernesses — hike or fly into trackless tundra above the Arctic Circle under the perpetual summer midnight sun.", img: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Gates_of_the_Arctic_National_Park_and_Preserve.jpg" },
+      { name: "Brooks Range Peaks & Rivers", desc: "Spectacular peaks rising 8,000 feet from valley floors cut by pristine salmon rivers — fly fishing for arctic grayling and char in waters untouched by roads.", img: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Gates_of_the_Arctic_National_Park_and_Preserve.jpg" }
     ],
     bestTime: "Jun – Aug", bestTimeTip: "Only accessible by bush plane or a very long overland trek. Late June features wildflowers and midnight sun. This is wilderness at its most extreme.",
     nearestCity: "Fairbanks, AK (FAI)", flightTime: "~9h+ (multiple stops)", flightCost: "$600–1,200", flightNote: "Fly to Fairbanks (FAI) then charter a bush plane to Bettles or Coldfoot. No roads enter the park."
   },
   {
     name: "Gateway Arch", state: "Missouri", lat: 38.63, lng: -90.19,
-    img: "https://picsum.photos/seed/gateway-arch/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Gateway_Arch_from_the_Old_Courthouse.jpg",
     attractions: [
-      { name: "Tram Ride to the Top (630 ft)", desc: "A unique tram pod whisks you inside the world's tallest arch to observation windows with panoramic views of the Mississippi River and St. Louis skyline.", img: "https://picsum.photos/seed/gateway-arch-top/600/400" },
-      { name: "Museum of Westward Expansion", desc: "An underground museum beneath the Arch explores the Louisiana Purchase, Lewis & Clark Expedition, and Native American cultures through immersive exhibits.", img: "https://picsum.photos/seed/westward-expansion/600/400" }
+      { name: "Tram Ride to the Top (630 ft)", desc: "A unique tram pod whisks you inside the world's tallest arch to observation windows with panoramic views of the Mississippi River and St. Louis skyline.", img: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Gateway_Arch_from_the_Old_Courthouse.jpg" },
+      { name: "Museum of Westward Expansion", desc: "An underground museum beneath the Arch explores the Louisiana Purchase, Lewis & Clark Expedition, and Native American cultures through immersive exhibits.", img: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Gateway_Arch_from_the_Old_Courthouse.jpg" }
     ],
     bestTime: "Apr – Oct", bestTimeTip: "Summer offers outdoor river events and clear skies. The arch is stunning at night lit up above the Mississippi. Avoid winter cold snaps.",
     nearestCity: "St. Louis, MO (STL)", flightTime: "~3h (direct)", flightCost: "$120–280", flightNote: "Frequent direct flights NYC to St. Louis (STL). The arch is in downtown St. Louis — no car needed from airport."
@@ -1027,10 +1027,10 @@ const parks = [
   },
   {
     name: "Glacier Bay", state: "Alaska", lat: 58.50, lng: -137.00,
-    img: "https://picsum.photos/seed/glacier-bay/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/79/Johns_Hopkins_Glacier.jpg",
     attractions: [
-      { name: "Tidewater Glacier Boat Tour", desc: "Witness 1,000-year-old glaciers calving house-sized icebergs into the sea from a tour boat — accompanied by whales, porpoises, and Steller sea lions.", img: "https://picsum.photos/seed/tidewater-glaciers/600/400" },
-      { name: "Humpback Whale Watching", desc: "One of the world's premier whale-watching destinations — humpback whales bubble-net feed in the nutrient-rich bay in extraordinary cooperative displays.", img: "https://picsum.photos/seed/glacier-bay-whale/600/400" }
+      { name: "Tidewater Glacier Boat Tour", desc: "Witness 1,000-year-old glaciers calving house-sized icebergs into the sea from a tour boat — accompanied by whales, porpoises, and Steller sea lions.", img: "https://upload.wikimedia.org/wikipedia/commons/7/79/Johns_Hopkins_Glacier.jpg" },
+      { name: "Humpback Whale Watching", desc: "One of the world's premier whale-watching destinations — humpback whales bubble-net feed in the nutrient-rich bay in extraordinary cooperative displays.", img: "https://upload.wikimedia.org/wikipedia/commons/7/79/Johns_Hopkins_Glacier.jpg" }
     ],
     bestTime: "May – Sep", bestTimeTip: "Cruise ships bring most visitors. Kayaking in June–August among glaciers and icebergs is a once-in-a-lifetime experience. Most facilities close in winter.",
     nearestCity: "Juneau, AK (JNU)", flightTime: "~7–8h (1 stop)", flightCost: "$350–750", flightNote: "Fly to Juneau (JNU) then take a small aircraft or ferry to Gustavus. Book well in advance as logistics are complex."
@@ -1057,20 +1057,20 @@ const parks = [
   },
   {
     name: "Great Basin", state: "Nevada", lat: 38.98, lng: -114.30,
-    img: "https://picsum.photos/seed/great-basin-nevada/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Great_Basin_National_Park_Wheeler_Peak.jpg",
     attractions: [
-      { name: "Lehman Caves Tour", desc: "A stunning limestone cave system adorned with rare cave formations including 'cave shields' — 300 of the world's 600 known examples are found here.", img: "https://picsum.photos/seed/lehman-caves/600/400" },
-      { name: "Wheeler Peak & Ancient Bristlecone Pines", desc: "Hike to 13,063-foot Wheeler Peak and visit a grove of 5,000-year-old bristlecone pines — the oldest living trees on Earth — under some of the darkest skies in the US.", img: "https://picsum.photos/seed/bristlecone-pines/600/400" }
+      { name: "Lehman Caves Tour", desc: "A stunning limestone cave system adorned with rare cave formations including 'cave shields' — 300 of the world's 600 known examples are found here.", img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Great_Basin_National_Park_Wheeler_Peak.jpg" },
+      { name: "Wheeler Peak & Ancient Bristlecone Pines", desc: "Hike to 13,063-foot Wheeler Peak and visit a grove of 5,000-year-old bristlecone pines — the oldest living trees on Earth — under some of the darkest skies in the US.", img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Great_Basin_National_Park_Wheeler_Peak.jpg" }
     ],
     bestTime: "Jun – Oct", bestTimeTip: "One of the least-visited parks despite extraordinary features. Milky Way viewing here is among the best in the country. Summer and fall days are pleasant at elevation.",
     nearestCity: "Salt Lake City, UT (SLC)", flightTime: "~5–6h (1 stop)", flightCost: "$220–480", flightNote: "Fly to Salt Lake City (SLC) then drive ~4h, or Las Vegas (LAS) ~4h drive. Very remote — gas up before entering."
   },
   {
     name: "Great Sand Dunes", state: "Colorado", lat: 37.73, lng: -105.51,
-    img: "https://picsum.photos/seed/great-sand-dunes/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Great_Sand_Dunes_National_Park_and_Preserve%2C_Colorado%2C_USA.jpg",
     attractions: [
-      { name: "Star Dune — Tallest Dune in N. America", desc: "Climb 750-foot Star Dune for a view across the San Luis Valley framed by 13,000-foot Sangre de Cristo Mountains — surreal and otherworldly.", img: "https://picsum.photos/seed/star-dune/600/400" },
-      { name: "Medano Creek Sandboarding", desc: "Rent a sandboard and ride massive dunes above a seasonal stream — one of the most unusual and fun outdoor experiences in any national park.", img: "https://picsum.photos/seed/sandboarding/600/400" }
+      { name: "Star Dune — Tallest Dune in N. America", desc: "Climb 750-foot Star Dune for a view across the San Luis Valley framed by 13,000-foot Sangre de Cristo Mountains — surreal and otherworldly.", img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Great_Sand_Dunes_National_Park_and_Preserve%2C_Colorado%2C_USA.jpg" },
+      { name: "Medano Creek Sandboarding", desc: "Rent a sandboard and ride massive dunes above a seasonal stream — one of the most unusual and fun outdoor experiences in any national park.", img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Great_Sand_Dunes_National_Park_and_Preserve%2C_Colorado%2C_USA.jpg" }
     ],
     bestTime: "Apr – Jun, Sep – Oct", bestTimeTip: "April and May offer Medano Creek's seasonal flow — perfect for sandboarding and wading. September brings mild temps and dramatic evening light.",
     nearestCity: "Denver, CO (DEN)", flightTime: "~4–5h (1 stop)", flightCost: "$180–380", flightNote: "Fly to Denver (DEN) ~4h drive south via Hwy 17, or Colorado Springs (COS) ~3.5h. Denver has abundant direct NYC flights."
@@ -1087,60 +1087,60 @@ const parks = [
   },
   {
     name: "Guadalupe Mountains", state: "Texas", lat: 31.92, lng: -104.87,
-    img: "https://picsum.photos/seed/guadalupe-mountains/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e9/El_Capitan_from_US_62.jpg",
     attractions: [
-      { name: "Guadalupe Peak — Highest in Texas", desc: "Hike 8.4 miles round-trip to Texas's rooftop at 8,751 feet — marked by a commemorative stainless steel pyramid from American Airlines.", img: "https://picsum.photos/seed/guadalupe-peak/600/400" },
-      { name: "McKittrick Canyon Fall Foliage", desc: "Considered one of the top fall foliage destinations in Texas — bigtooth maples explode into gold and red against limestone canyon walls in October.", img: "https://picsum.photos/seed/mckittrick-canyon/600/400" }
+      { name: "Guadalupe Peak — Highest in Texas", desc: "Hike 8.4 miles round-trip to Texas's rooftop at 8,751 feet — marked by a commemorative stainless steel pyramid from American Airlines.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e9/El_Capitan_from_US_62.jpg" },
+      { name: "McKittrick Canyon Fall Foliage", desc: "Considered one of the top fall foliage destinations in Texas — bigtooth maples explode into gold and red against limestone canyon walls in October.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e9/El_Capitan_from_US_62.jpg" }
     ],
     bestTime: "Mar – Apr, Oct – Nov", bestTimeTip: "October offers spectacular fall colors in McKittrick Canyon. Spring desert wildflowers are beautiful. Summer temperatures can exceed 100°F.",
     nearestCity: "El Paso, TX (ELP)", flightTime: "~4h (1 stop)", flightCost: "$200–420", flightNote: "Fly to El Paso (ELP) ~2h drive east, or Midland-Odessa (MAF) ~2.5h west. Direct NYC to El Paso available."
   },
   {
     name: "Haleakalā", state: "Hawaii (Maui)", lat: 20.72, lng: -156.17,
-    img: "https://picsum.photos/seed/haleakala-crater/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Haleakala_crater.jpg",
     attractions: [
-      { name: "Summit Sunrise Above the Clouds", desc: "At 10,023 feet, watch the sun rise above a sea of clouds filling the 7.5-mile wide volcanic crater — often described as a spiritual, life-changing experience.", img: "https://picsum.photos/seed/haleakala-sunrise/600/400" },
-      { name: "Kipahulu & 'Ohe'o Gulch Pools", desc: "Hike past sacred freshwater pools cascading down volcanic rock to the sea — the Pipiwai Trail leads through a bamboo forest to 400-foot Waimoku Falls.", img: "https://picsum.photos/seed/haleakala-pools/600/400" }
+      { name: "Summit Sunrise Above the Clouds", desc: "At 10,023 feet, watch the sun rise above a sea of clouds filling the 7.5-mile wide volcanic crater — often described as a spiritual, life-changing experience.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Haleakala_crater.jpg" },
+      { name: "Kipahulu & 'Ohe'o Gulch Pools", desc: "Hike past sacred freshwater pools cascading down volcanic rock to the sea — the Pipiwai Trail leads through a bamboo forest to 400-foot Waimoku Falls.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Haleakala_crater.jpg" }
     ],
     bestTime: "Apr – Nov", bestTimeTip: "Summit sunrise requires timed-entry reservation. January–March brings clouds but fewer crowds. The crater trail is accessible year-round at elevation.",
     nearestCity: "Kahului, Maui (OGG)", flightTime: "~10h (1 stop)", flightCost: "$400–900", flightNote: "Fly to Kahului (OGG) on Maui — several direct flights from JFK. Park is ~45 min drive from the airport. Reserve summit sunrise permit."
   },
   {
     name: "Hawaiʻi Volcanoes", state: "Hawaii (Big Island)", lat: 19.38, lng: -155.20,
-    img: "https://picsum.photos/seed/hawaii-volcanoes/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kilauea_Iki_from_Puu_Puai.jpg",
     attractions: [
-      { name: "Kīlauea Overlook & Lava Lake", desc: "Watch an active volcano in real time — the Halemaʻumaʻu Crater has intermittently hosted a lava lake, glowing brilliantly after dark from multiple overlooks.", img: "https://picsum.photos/seed/kilauea-lava/600/400" },
-      { name: "Chain of Craters Road", desc: "Drive 19 miles from rainforest to sea-level lava fields, past ancient petroglyphs, pit craters, and hardened lava flows that may still be steaming.", img: "https://picsum.photos/seed/chain-craters/600/400" }
+      { name: "Kīlauea Overlook & Lava Lake", desc: "Watch an active volcano in real time — the Halemaʻumaʻu Crater has intermittently hosted a lava lake, glowing brilliantly after dark from multiple overlooks.", img: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kilauea_Iki_from_Puu_Puai.jpg" },
+      { name: "Chain of Craters Road", desc: "Drive 19 miles from rainforest to sea-level lava fields, past ancient petroglyphs, pit craters, and hardened lava flows that may still be steaming.", img: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kilauea_Iki_from_Puu_Puai.jpg" }
     ],
     bestTime: "Year-round", bestTimeTip: "Volcanic activity is unpredictable and always spectacular. Check NPS eruption alerts. Cooler months (Nov–Mar) are more comfortable for hiking.",
     nearestCity: "Hilo, HI (ITO)", flightTime: "~10h (1 stop)", flightCost: "$400–900", flightNote: "Fly to Hilo (ITO) or Kona (KOA) on the Big Island — both require connecting through Honolulu or Maui from the mainland."
   },
   {
     name: "Hot Springs", state: "Arkansas", lat: 34.51, lng: -93.05,
-    img: "https://picsum.photos/seed/hot-springs-arkansas/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bathhouse_Row_Hot_Springs_National_Park.jpg",
     attractions: [
-      { name: "Bathhouse Row Historic District", desc: "Stroll 8 stunning early-20th century neoclassical bathhouses on Central Avenue — the 'Spa City' where thermal spring water was revered for its healing properties.", img: "https://picsum.photos/seed/bathhouse-row/600/400" },
-      { name: "Mountain Tower & Tufa Terraces", desc: "Climb 1,400 feet to the observation tower for a panoramic view of the Ouachita Mountains, then hike past unique tufa rock formations created by thermal springs.", img: "https://picsum.photos/seed/hot-springs-tower/600/400" }
+      { name: "Bathhouse Row Historic District", desc: "Stroll 8 stunning early-20th century neoclassical bathhouses on Central Avenue — the 'Spa City' where thermal spring water was revered for its healing properties.", img: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bathhouse_Row_Hot_Springs_National_Park.jpg" },
+      { name: "Mountain Tower & Tufa Terraces", desc: "Climb 1,400 feet to the observation tower for a panoramic view of the Ouachita Mountains, then hike past unique tufa rock formations created by thermal springs.", img: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bathhouse_Row_Hot_Springs_National_Park.jpg" }
     ],
     bestTime: "Mar – May, Sep – Nov", bestTimeTip: "The only national park within a city — accessible year-round. Spring and fall offer perfect hiking weather. Bathhouse Row is a year-round experience.",
     nearestCity: "Little Rock, AR (LIT)", flightTime: "~3h (1 stop)", flightCost: "$150–350", flightNote: "Fly to Little Rock (LIT) ~1h drive west. Direct NYC to Little Rock flights available on some days."
   },
   {
     name: "Indiana Dunes", state: "Indiana", lat: 41.65, lng: -87.05,
-    img: "https://picsum.photos/seed/indiana-dunes/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/19/West_Beach_Bathhouse%2C_Indiana_Dunes_National_Park.jpg",
     attractions: [
-      { name: "Mount Baldy Living Dune", desc: "A 126-foot-tall 'living dune' that slowly migrates — climb to the crest for a stunning view of Lake Michigan with the Chicago skyline visible 35 miles away.", img: "https://picsum.photos/seed/mount-baldy/600/400" },
-      { name: "West Beach Sunset", desc: "One of the most dramatic beach sunsets in the Midwest — watch the sun sink behind the Chicago skyline across the glittering waters of Lake Michigan.", img: "https://picsum.photos/seed/west-beach-indiana/600/400" }
+      { name: "Mount Baldy Living Dune", desc: "A 126-foot-tall 'living dune' that slowly migrates — climb to the crest for a stunning view of Lake Michigan with the Chicago skyline visible 35 miles away.", img: "https://upload.wikimedia.org/wikipedia/commons/1/19/West_Beach_Bathhouse%2C_Indiana_Dunes_National_Park.jpg" },
+      { name: "West Beach Sunset", desc: "One of the most dramatic beach sunsets in the Midwest — watch the sun sink behind the Chicago skyline across the glittering waters of Lake Michigan.", img: "https://upload.wikimedia.org/wikipedia/commons/1/19/West_Beach_Bathhouse%2C_Indiana_Dunes_National_Park.jpg" }
     ],
     bestTime: "Jun – Sep", bestTimeTip: "Summer brings warm Lake Michigan swimming and beach weather. Fall foliage over the dunes is uniquely beautiful. Chicago is visible year-round from the peaks.",
     nearestCity: "Chicago, IL (ORD/MDW)", flightTime: "~2.5h (direct)", flightCost: "$100–250", flightNote: "Fly to Chicago O'Hare (ORD) or Midway (MDW) — very frequent from NYC. Park is ~1h east by South Shore rail or car."
   },
   {
     name: "Isle Royale", state: "Michigan", lat: 48.10, lng: -88.55,
-    img: "https://picsum.photos/seed/isle-royale/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Isle_Royale_National_Park.jpg",
     attractions: [
-      { name: "Lake Superior Wilderness Kayaking", desc: "Paddle through pristine coves and rocky shores of a remote island wilderness where Lake Superior shipwrecks rest in crystal-clear water below your hull.", img: "https://picsum.photos/seed/isle-royale-kayak/600/400" },
-      { name: "Rock Harbor & Wolf/Moose Research", desc: "Stay at Rock Harbor Lodge and watch moose wade into beaver ponds — this island hosts a 60+ year ongoing wolf-moose ecological study unique in science.", img: "https://picsum.photos/seed/isle-royale-moose/600/400" }
+      { name: "Lake Superior Wilderness Kayaking", desc: "Paddle through pristine coves and rocky shores of a remote island wilderness where Lake Superior shipwrecks rest in crystal-clear water below your hull.", img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Isle_Royale_National_Park.jpg" },
+      { name: "Rock Harbor & Wolf/Moose Research", desc: "Stay at Rock Harbor Lodge and watch moose wade into beaver ponds — this island hosts a 60+ year ongoing wolf-moose ecological study unique in science.", img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Isle_Royale_National_Park.jpg" }
     ],
     bestTime: "Jun – Sep", bestTimeTip: "The park is completely closed October to April. Summer offers ferry access, clear Lake Superior views, and excellent fishing. Book ferries and lodging months ahead.",
     nearestCity: "Houghton, MI (CMX)", flightTime: "~5h (multiple stops)", flightCost: "$300–600", flightNote: "Fly to Houghton (CMX) or Duluth (DLH) then ferry 3–4h to the island. Accessible only by boat or seaplane."
@@ -1157,80 +1157,80 @@ const parks = [
   },
   {
     name: "Katmai", state: "Alaska", lat: 58.50, lng: -155.00,
-    img: "https://picsum.photos/seed/katmai-alaska/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/49/Katmai_Brooks_Falls_bears.jpg",
     attractions: [
-      { name: "Brooks Falls Bear Viewing", desc: "Watch 50+ massive brown bears fishing for sockeye salmon in a waterfall feeding frenzy — one of the greatest wildlife spectacles on Earth, viewable from platforms.", img: "https://picsum.photos/seed/katmai-bears/600/400" },
-      { name: "Valley of Ten Thousand Smokes", desc: "A volcanic moonscape created by the 1912 Novarupta eruption — the largest volcanic event of the 20th century — ash fills the valley 700 feet deep.", img: "https://picsum.photos/seed/valley-smokes/600/400" }
+      { name: "Brooks Falls Bear Viewing", desc: "Watch 50+ massive brown bears fishing for sockeye salmon in a waterfall feeding frenzy — one of the greatest wildlife spectacles on Earth, viewable from platforms.", img: "https://upload.wikimedia.org/wikipedia/commons/4/49/Katmai_Brooks_Falls_bears.jpg" },
+      { name: "Valley of Ten Thousand Smokes", desc: "A volcanic moonscape created by the 1912 Novarupta eruption — the largest volcanic event of the 20th century — ash fills the valley 700 feet deep.", img: "https://upload.wikimedia.org/wikipedia/commons/4/49/Katmai_Brooks_Falls_bears.jpg" }
     ],
     bestTime: "Jul – Aug", bestTimeTip: "Brooks Falls bear viewing peaks in July (sockeye run) and September (late run). Only accessible by bush plane. Book viewing platforms far in advance.",
     nearestCity: "King Salmon, AK (AKN)", flightTime: "~9h (multiple stops)", flightCost: "$600–1,200", flightNote: "Fly to Anchorage then take a connecting bush plane to King Salmon or directly to Brooks Camp. Very expensive — budget $1,500+ total."
   },
   {
     name: "Kenai Fjords", state: "Alaska", lat: 59.92, lng: -149.65,
-    img: "https://picsum.photos/seed/kenai-fjords/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Kenai_Fjords_National_Park_coastline.jpg",
     attractions: [
-      { name: "Exit Glacier Hike & Harding Icefield", desc: "Hike past dramatic retreat markers showing Exit Glacier's rapid recession, then ascend to the vast Harding Icefield — one of the last large icefields in the US.", img: "https://picsum.photos/seed/exit-glacier/600/400" },
-      { name: "Resurrection Bay Cruise", desc: "Day cruise from Seward through fjords calving tidewater glaciers, past humpback whales, orcas, puffins, sea otters, and Steller sea lions in wildlife-rich waters.", img: "https://picsum.photos/seed/resurrection-bay/600/400" }
+      { name: "Exit Glacier Hike & Harding Icefield", desc: "Hike past dramatic retreat markers showing Exit Glacier's rapid recession, then ascend to the vast Harding Icefield — one of the last large icefields in the US.", img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Kenai_Fjords_National_Park_coastline.jpg" },
+      { name: "Resurrection Bay Cruise", desc: "Day cruise from Seward through fjords calving tidewater glaciers, past humpback whales, orcas, puffins, sea otters, and Steller sea lions in wildlife-rich waters.", img: "https://upload.wikimedia.org/wikipedia/commons/2/22/Kenai_Fjords_National_Park_coastline.jpg" }
     ],
     bestTime: "May – Sep", bestTimeTip: "Late May offers exciting calving activity as temperatures warm. July and August are peak season with the most wildlife. Exit Glacier is open year-round.",
     nearestCity: "Anchorage, AK (ANC)", flightTime: "~8h (1 stop)", flightCost: "$400–850", flightNote: "Fly to Anchorage (ANC) then drive ~2.5h to Seward. Many daily direct flights NYC to Anchorage in summer."
   },
   {
     name: "Kings Canyon", state: "California", lat: 36.80, lng: -118.55,
-    img: "https://picsum.photos/seed/kings-canyon/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/18/General_Grant_Tree%2C_Kings_Canyon_National_Park.jpg",
     attractions: [
-      { name: "General Grant Tree — Nation's Christmas Tree", desc: "The world's second-largest living tree by volume — a 267-foot giant sequoia declared the Nation's Christmas Tree in 1926, accessible by a short loop trail.", img: "https://picsum.photos/seed/general-grant-tree/600/400" },
-      { name: "Kings Canyon Scenic Byway", desc: "One of California's most dramatic drives — descends 5,000 feet into the deepest canyon in the US, passing roaring Kings River rapids and sheer granite walls.", img: "https://picsum.photos/seed/kings-canyon-drive/600/400" }
+      { name: "General Grant Tree — Nation's Christmas Tree", desc: "The world's second-largest living tree by volume — a 267-foot giant sequoia declared the Nation's Christmas Tree in 1926, accessible by a short loop trail.", img: "https://upload.wikimedia.org/wikipedia/commons/1/18/General_Grant_Tree%2C_Kings_Canyon_National_Park.jpg" },
+      { name: "Kings Canyon Scenic Byway", desc: "One of California's most dramatic drives — descends 5,000 feet into the deepest canyon in the US, passing roaring Kings River rapids and sheer granite walls.", img: "https://upload.wikimedia.org/wikipedia/commons/1/18/General_Grant_Tree%2C_Kings_Canyon_National_Park.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "Combined with neighboring Sequoia NP, summer offers access to both groves. Cedar Grove area opens in late May with wildflowers and rushing waterfalls.",
     nearestCity: "Fresno, CA (FAT)", flightTime: "~6h (1 stop)", flightCost: "$220–480", flightNote: "Fly to Fresno (FAT) ~1.5h drive, or LAX ~4h. Direct NYC to Fresno flights are limited — connecting through LAX or SFO."
   },
   {
     name: "Kobuk Valley", state: "Alaska", lat: 67.55, lng: -159.28,
-    img: "https://picsum.photos/seed/kobuk-valley/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kobuk_Valley_sand_dunes.jpg",
     attractions: [
-      { name: "Great Kobuk Sand Dunes", desc: "The largest active sand dunes in the Arctic — 100 feet tall, 25 miles square, and roasting at 100°F in summer while surrounded by boreal forest beyond the Arctic Circle.", img: "https://picsum.photos/seed/kobuk-sand-dunes/600/400" },
-      { name: "Caribou Migration Crossing", desc: "Twice yearly, 500,000 caribou cross the Kobuk River in an ancient migration spectacle — one of the last great terrestrial wildlife migrations on Earth.", img: "https://picsum.photos/seed/caribou-migration/600/400" }
+      { name: "Great Kobuk Sand Dunes", desc: "The largest active sand dunes in the Arctic — 100 feet tall, 25 miles square, and roasting at 100°F in summer while surrounded by boreal forest beyond the Arctic Circle.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kobuk_Valley_sand_dunes.jpg" },
+      { name: "Caribou Migration Crossing", desc: "Twice yearly, 500,000 caribou cross the Kobuk River in an ancient migration spectacle — one of the last great terrestrial wildlife migrations on Earth.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kobuk_Valley_sand_dunes.jpg" }
     ],
     bestTime: "Jun – Aug", bestTimeTip: "No roads reach this park — access only by bush plane. Summer offers near-continuous daylight. September caribou migration viewing is extraordinary.",
     nearestCity: "Kotzebue, AK (OTZ)", flightTime: "~10h+ (multiple stops)", flightCost: "$700–1,400", flightNote: "Fly to Kotzebue (OTZ) then charter a bush plane. One of the most logistically challenging parks to visit in the US."
   },
   {
     name: "Lake Clark", state: "Alaska", lat: 60.97, lng: -153.42,
-    img: "https://picsum.photos/seed/lake-clark/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lake_Clark_National_Park.jpg",
     attractions: [
-      { name: "Bear Viewing at Silver Salmon Creek", desc: "Watch bears catching silver salmon at a remote coastal beach — accessible only by floatplane, offering intimate wildlife encounters rivaling anywhere in Alaska.", img: "https://picsum.photos/seed/silver-salmon-creek/600/400" },
-      { name: "Turquoise Lake Alpine Hiking", desc: "Float planes land on sparkling Turquoise Lake, base camp for multi-day hikes across alpine tundra with views of active volcanoes and glaciated peaks.", img: "https://picsum.photos/seed/turquoise-lake/600/400" }
+      { name: "Bear Viewing at Silver Salmon Creek", desc: "Watch bears catching silver salmon at a remote coastal beach — accessible only by floatplane, offering intimate wildlife encounters rivaling anywhere in Alaska.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lake_Clark_National_Park.jpg" },
+      { name: "Turquoise Lake Alpine Hiking", desc: "Float planes land on sparkling Turquoise Lake, base camp for multi-day hikes across alpine tundra with views of active volcanoes and glaciated peaks.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lake_Clark_National_Park.jpg" }
     ],
     bestTime: "Jun – Sep", bestTimeTip: "No roads enter the park. Bear viewing peaks July–September. Summer brings wildflowers and dramatic mountain weather. Very expensive to access.",
     nearestCity: "Anchorage, AK (ANC)", flightTime: "~8h (1 stop)", flightCost: "$500–1,000", flightNote: "Fly to Anchorage then charter a floatplane (~1–1.5h). Very remote — plan for weather delays and budget $800+ for air charter."
   },
   {
     name: "Lassen Volcanic", state: "California", lat: 40.49, lng: -121.51,
-    img: "https://picsum.photos/seed/lassen-volcanic/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Lassen_Peak.jpg",
     attractions: [
-      { name: "Bumpass Hell Hydrothermal Area", desc: "A 3-mile round-trip hike leads to the park's largest hydrothermal area — boiling mud pots, fumaroles, and sulfurous hot springs in a lunar landscape.", img: "https://picsum.photos/seed/bumpass-hell/600/400" },
-      { name: "Lassen Peak Summit Hike", desc: "A 5-mile round-trip to the summit of the largest plug dome volcano on Earth (10,457 ft) — with views of Mount Shasta, the Sacramento Valley, and the Coast Range.", img: "https://picsum.photos/seed/lassen-peak/600/400" }
+      { name: "Bumpass Hell Hydrothermal Area", desc: "A 3-mile round-trip hike leads to the park's largest hydrothermal area — boiling mud pots, fumaroles, and sulfurous hot springs in a lunar landscape.", img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Lassen_Peak.jpg" },
+      { name: "Lassen Peak Summit Hike", desc: "A 5-mile round-trip to the summit of the largest plug dome volcano on Earth (10,457 ft) — with views of Mount Shasta, the Sacramento Valley, and the Coast Range.", img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Lassen_Peak.jpg" }
     ],
     bestTime: "Jul – Sep", bestTimeTip: "Heavy snowpack keeps the park road closed until July. Late summer offers all trails accessible and hydrothermal features at their most active.",
     nearestCity: "Redding, CA (RDD)", flightTime: "~6h (1 stop)", flightCost: "$250–550", flightNote: "Fly to Sacramento (SMF) ~2.5h drive, or Redding (RDD) ~1h drive. No direct flights to Redding from NYC."
   },
   {
     name: "Mammoth Cave", state: "Kentucky", lat: 37.18, lng: -86.10,
-    img: "https://picsum.photos/seed/mammoth-cave/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mammoth_Cave_National_Park.jpg",
     attractions: [
-      { name: "Grand Avenue Tour", desc: "Explore four miles of the world's longest known cave system — passing vast rooms with names like Snowball Dining Room and Domes & Dripstones.", img: "https://picsum.photos/seed/mammoth-cave-tour/600/400" },
-      { name: "Green River Canoe Float", desc: "Paddle the Green River through a pristine wilderness above the underground maze — home to unique cave ecosystem species found nowhere else on Earth.", img: "https://picsum.photos/seed/green-river-canoe/600/400" }
+      { name: "Grand Avenue Tour", desc: "Explore four miles of the world's longest known cave system — passing vast rooms with names like Snowball Dining Room and Domes & Dripstones.", img: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mammoth_Cave_National_Park.jpg" },
+      { name: "Green River Canoe Float", desc: "Paddle the Green River through a pristine wilderness above the underground maze — home to unique cave ecosystem species found nowhere else on Earth.", img: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mammoth_Cave_National_Park.jpg" }
     ],
     bestTime: "Apr – Oct", bestTimeTip: "Cave maintains 54°F year-round — perfect for hot summer days. Surface trails are beautiful in fall. Spring flooding can affect some tours.",
     nearestCity: "Nashville, TN (BNA)", flightTime: "~3h (direct)", flightCost: "$150–350", flightNote: "Fly to Nashville (BNA) ~1.5h drive north, or Louisville (SDF) ~1.5h south. Both have direct NYC connections."
   },
   {
     name: "Mesa Verde", state: "Colorado", lat: 37.18, lng: -108.49,
-    img: "https://picsum.photos/seed/mesa-verde/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Cliff_Palace%2C_Mesa_Verde_National_Park.jpg",
     attractions: [
-      { name: "Cliff Palace — Largest Cliff Dwelling", desc: "The largest cliff dwelling in North America — 150 rooms and 23 kivas carved into a sheer sandstone alcove by the Ancestral Puebloans 700–900 years ago.", img: "https://picsum.photos/seed/cliff-palace/600/400" },
-      { name: "Balcony House Ladder Climb", desc: "Climb a 32-foot ladder into a cliff dwelling accessible only through a narrow rock tunnel — one of the most thrilling and intimate archaeological sites in the US.", img: "https://picsum.photos/seed/balcony-house/600/400" }
+      { name: "Cliff Palace — Largest Cliff Dwelling", desc: "The largest cliff dwelling in North America — 150 rooms and 23 kivas carved into a sheer sandstone alcove by the Ancestral Puebloans 700–900 years ago.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Cliff_Palace%2C_Mesa_Verde_National_Park.jpg" },
+      { name: "Balcony House Ladder Climb", desc: "Climb a 32-foot ladder into a cliff dwelling accessible only through a narrow rock tunnel — one of the most thrilling and intimate archaeological sites in the US.", img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Cliff_Palace%2C_Mesa_Verde_National_Park.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "Cliff dwelling tours require timed tickets — book weeks in advance. Summer sunrise over canyon country with cliff dwellings glowing amber is unforgettable.",
     nearestCity: "Durango, CO (DRO)", flightTime: "~5h (1 stop)", flightCost: "$250–550", flightNote: "Fly to Durango (DRO) ~35 min drive, or Grand Junction (GJT) ~2h. Limited NYC connections — most route through Denver."
@@ -1247,20 +1247,20 @@ const parks = [
   },
   {
     name: "New River Gorge", state: "West Virginia", lat: 38.07, lng: -81.08,
-    img: "https://picsum.photos/seed/new-river-gorge/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/New_River_Gorge_Bridge.jpg",
     attractions: [
-      { name: "New River Gorge Bridge Walk", desc: "Walk the catwalk beneath America's longest steel span arch bridge (876 feet above the river) for a dizzying perspective on the deepest gorge east of the Mississippi.", img: "https://picsum.photos/seed/new-river-bridge/600/400" },
-      { name: "Grandview & Whitewater Rafting", desc: "Raft Class V rapids through the most thrilling whitewater section east of the Mississippi, then enjoy panoramic views from the Grandview Rim overlooks.", img: "https://picsum.photos/seed/new-river-rapids/600/400" }
+      { name: "New River Gorge Bridge Walk", desc: "Walk the catwalk beneath America's longest steel span arch bridge (876 feet above the river) for a dizzying perspective on the deepest gorge east of the Mississippi.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/New_River_Gorge_Bridge.jpg" },
+      { name: "Grandview & Whitewater Rafting", desc: "Raft Class V rapids through the most thrilling whitewater section east of the Mississippi, then enjoy panoramic views from the Grandview Rim overlooks.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/New_River_Gorge_Bridge.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "Bridge Day (third Saturday in October) lets BASE jumpers leap from the bridge — spectacular to watch. Fall colors peak mid-October.",
     nearestCity: "Charleston, WV (CRW)", flightTime: "~2–3h (1 stop)", flightCost: "$150–350", flightNote: "Fly to Charleston (CRW) ~1h drive east, or Beckley's tiny airport. Both require connections from NYC."
   },
   {
     name: "North Cascades", state: "Washington", lat: 48.70, lng: -121.20,
-    img: "https://picsum.photos/seed/north-cascades/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Diablo_Lake_North_Cascades.jpg",
     attractions: [
-      { name: "Cascade Pass Wildflower Hike", desc: "A 7-mile round-trip trail through sub-alpine paradise with panoramic views of glaciated peaks, wildflower meadows, and hanging glaciers.", img: "https://picsum.photos/seed/cascade-pass/600/400" },
-      { name: "Ross Lake National Recreation Area", desc: "A remote turquoise reservoir ringed by steep forested slopes — accessible only by boat or trail, offering world-class kayaking and canoeing.", img: "https://picsum.photos/seed/ross-lake/600/400" }
+      { name: "Cascade Pass Wildflower Hike", desc: "A 7-mile round-trip trail through sub-alpine paradise with panoramic views of glaciated peaks, wildflower meadows, and hanging glaciers.", img: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Diablo_Lake_North_Cascades.jpg" },
+      { name: "Ross Lake National Recreation Area", desc: "A remote turquoise reservoir ringed by steep forested slopes — accessible only by boat or trail, offering world-class kayaking and canoeing.", img: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Diablo_Lake_North_Cascades.jpg" }
     ],
     bestTime: "Jul – Sep", bestTimeTip: "Heavy snowpack closes high trails until July. Late August offers the widest trail access. One of the least-visited parks despite stunning scenery.",
     nearestCity: "Seattle, WA (SEA)", flightTime: "~6h (direct)", flightCost: "$200–450", flightNote: "Fly to Seattle (SEA) ~3h drive east. The park has no developed visitor services — plan ahead for food and fuel."
@@ -1277,30 +1277,30 @@ const parks = [
   },
   {
     name: "Petrified Forest", state: "Arizona", lat: 35.07, lng: -109.78,
-    img: "https://picsum.photos/seed/petrified-forest/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Petrified_Forest_National_Park_2013.jpg",
     attractions: [
-      { name: "Crystal Forest & Rainbow Forest", desc: "Walk among 225-million-year-old crystallized logs, now solid quartz and amethyst, scattered across a vivid painted desert in blazing purples, reds, and blues.", img: "https://picsum.photos/seed/crystal-forest/600/400" },
-      { name: "Painted Desert Overlooks at Sunrise", desc: "The bentonite badlands of the Painted Desert glow in extraordinary polychrome colors at golden hour — from the Rim Drive viewpoints it rivals any landscape in the Southwest.", img: "https://picsum.photos/seed/painted-desert/600/400" }
+      { name: "Crystal Forest & Rainbow Forest", desc: "Walk among 225-million-year-old crystallized logs, now solid quartz and amethyst, scattered across a vivid painted desert in blazing purples, reds, and blues.", img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Petrified_Forest_National_Park_2013.jpg" },
+      { name: "Painted Desert Overlooks at Sunrise", desc: "The bentonite badlands of the Painted Desert glow in extraordinary polychrome colors at golden hour — from the Rim Drive viewpoints it rivals any landscape in the Southwest.", img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Petrified_Forest_National_Park_2013.jpg" }
     ],
     bestTime: "Mar – May, Sep – Nov", bestTimeTip: "Spring and fall offer mild temperatures and dramatic desert lighting. Summer thunderstorms in July–August create atmospheric scenes but can be dangerously hot.",
     nearestCity: "Flagstaff, AZ (FLG)", flightTime: "~5h (1 stop)", flightCost: "$200–420", flightNote: "Fly to Phoenix (PHX) ~3h drive, or Flagstaff (FLG) ~1.5h drive. Both airports served from NYC."
   },
   {
     name: "Pinnacles", state: "California", lat: 36.48, lng: -121.16,
-    img: "https://picsum.photos/seed/pinnacles-california/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pinnacles_National_Park_High_Peaks.jpg",
     attractions: [
-      { name: "California Condor Viewing", desc: "One of only a few places in the US where you can reliably spot California condors (wingspan up to 9.5 feet) soaring on thermals over the volcanic spires.", img: "https://picsum.photos/seed/california-condor/600/400" },
-      { name: "Balconies Cave & Talus Trail", desc: "Scramble through a cave formed by stacked boulders — torch required — past colonies of bats to reach the towering andesite pinnacles on the other side.", img: "https://picsum.photos/seed/balconies-cave/600/400" }
+      { name: "California Condor Viewing", desc: "One of only a few places in the US where you can reliably spot California condors (wingspan up to 9.5 feet) soaring on thermals over the volcanic spires.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pinnacles_National_Park_High_Peaks.jpg" },
+      { name: "Balconies Cave & Talus Trail", desc: "Scramble through a cave formed by stacked boulders — torch required — past colonies of bats to reach the towering andesite pinnacles on the other side.", img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pinnacles_National_Park_High_Peaks.jpg" }
     ],
     bestTime: "Feb – Jun", bestTimeTip: "Spring wildflowers carpet the hillsides in brilliant color. Summer exceeds 100°F. The cave trail closes after heavy rains. Go early to beat the heat.",
     nearestCity: "San Jose, CA (SJC)", flightTime: "~6h (direct)", flightCost: "$200–450", flightNote: "Fly to San Jose (SJC) or San Francisco (SFO) ~2h drive south. One of California's least-visited parks — a hidden gem."
   },
   {
     name: "Redwood", state: "California", lat: 41.30, lng: -124.00,
-    img: "https://picsum.photos/seed/redwood-forest/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Coast_redwood_forest.jpg",
     attractions: [
-      { name: "Tall Trees Grove — World's Tallest Trees", desc: "Walk among the world's tallest living things — coastal redwoods over 380 feet tall, creating a dim green cathedral thousands of years in the making.", img: "https://picsum.photos/seed/tall-trees/600/400" },
-      { name: "Fern Canyon — Jurassic Park Filming Site", desc: "A narrow gorge with 50-foot walls carpeted entirely in five-spotted fern — one of the most otherworldly places in America, used as a filming location in Jurassic Park.", img: "https://picsum.photos/seed/fern-canyon/600/400" }
+      { name: "Tall Trees Grove — World's Tallest Trees", desc: "Walk among the world's tallest living things — coastal redwoods over 380 feet tall, creating a dim green cathedral thousands of years in the making.", img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Coast_redwood_forest.jpg" },
+      { name: "Fern Canyon — Jurassic Park Filming Site", desc: "A narrow gorge with 50-foot walls carpeted entirely in five-spotted fern — one of the most otherworldly places in America, used as a filming location in Jurassic Park.", img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Coast_redwood_forest.jpg" }
     ],
     bestTime: "May – Sep", bestTimeTip: "The fog season (summer) creates the mystical filtered light ideal for photography. April–May offers spring wildflowers. The park is often foggy but always dramatic.",
     nearestCity: "Arcata/Eureka, CA (ACV)", flightTime: "~7h (1 stop)", flightCost: "$300–600", flightNote: "Fly to Arcata (ACV) ~1h drive, or Portland (PDX) ~5h south drive. Rarely direct from NYC — usually connect via LAX or SFO."
@@ -1317,10 +1317,10 @@ const parks = [
   },
   {
     name: "Saguaro", state: "Arizona", lat: 32.25, lng: -110.50,
-    img: "https://picsum.photos/seed/saguaro-arizona/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/72/Saguaro_National_Park_Sunset.jpg",
     attractions: [
-      { name: "Saguaro Sunset at Signal Hill", desc: "Watch the sun set through a forest of 200-year-old giant saguaro cacti — some exceeding 40 feet and weighing 6 tons — glowing amber at dusk.", img: "https://picsum.photos/seed/saguaro-sunset/600/400" },
-      { name: "Ancient Hohokam Petroglyphs", desc: "Over 1,900 petroglyphs carved by the ancient Hohokam people adorn boulders at Signal Hill — among Arizona's most accessible Native American rock art sites.", img: "https://picsum.photos/seed/hohokam-petroglyphs/600/400" }
+      { name: "Saguaro Sunset at Signal Hill", desc: "Watch the sun set through a forest of 200-year-old giant saguaro cacti — some exceeding 40 feet and weighing 6 tons — glowing amber at dusk.", img: "https://upload.wikimedia.org/wikipedia/commons/7/72/Saguaro_National_Park_Sunset.jpg" },
+      { name: "Ancient Hohokam Petroglyphs", desc: "Over 1,900 petroglyphs carved by the ancient Hohokam people adorn boulders at Signal Hill — among Arizona's most accessible Native American rock art sites.", img: "https://upload.wikimedia.org/wikipedia/commons/7/72/Saguaro_National_Park_Sunset.jpg" }
     ],
     bestTime: "Oct – Apr", bestTimeTip: "Phoenix area heat makes summer miserable (110°F+). Spring bloom (March–April) fills the desert with wildflowers beneath the iconic cacti.",
     nearestCity: "Tucson, AZ (TUS)", flightTime: "~5h (1 stop)", flightCost: "$200–430", flightNote: "Fly to Tucson (TUS) ~30 min drive, or Phoenix (PHX) ~1.5h northwest. Direct NYC to Tucson available some days."
@@ -1337,70 +1337,70 @@ const parks = [
   },
   {
     name: "Shenandoah", state: "Virginia", lat: 38.53, lng: -78.35,
-    img: "https://picsum.photos/seed/shenandoah-virginia/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Shenandoah_National_Park_Skyline_Drive.jpg",
     attractions: [
-      { name: "Skyline Drive — 105-Mile Blue Ridge Crest", desc: "One of America's most scenic drives traces the spine of the Blue Ridge Mountains with 75 overlooks revealing rolling valleys in every direction.", img: "https://picsum.photos/seed/skyline-drive/600/400" },
-      { name: "Dark Hollow Falls & Stony Man Trail", desc: "Two iconic Shenandoah hikes: a 0.7-mile trail to Virginia's most-visited waterfall, and an easy 1.6-mile loop to the second-highest point in the park.", img: "https://picsum.photos/seed/dark-hollow-falls/600/400" }
+      { name: "Skyline Drive — 105-Mile Blue Ridge Crest", desc: "One of America's most scenic drives traces the spine of the Blue Ridge Mountains with 75 overlooks revealing rolling valleys in every direction.", img: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Shenandoah_National_Park_Skyline_Drive.jpg" },
+      { name: "Dark Hollow Falls & Stony Man Trail", desc: "Two iconic Shenandoah hikes: a 0.7-mile trail to Virginia's most-visited waterfall, and an easy 1.6-mile loop to the second-highest point in the park.", img: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Shenandoah_National_Park_Skyline_Drive.jpg" }
     ],
     bestTime: "May – Jun, Oct", bestTimeTip: "October is peak fall foliage — the Blue Ridge blazes in a 105-mile ribbon of color. June offers wildflowers and deer fawns. Book Skyland Lodge months ahead for fall.",
     nearestCity: "Washington, DC (DCA/IAD)", flightTime: "~1.5h (direct)", flightCost: "$100–250", flightNote: "Fly to DC (DCA or IAD) ~1.5h drive south on Skyline Drive entrance. Very accessible from NYC — also reachable by Amtrak+bus."
   },
   {
     name: "Theodore Roosevelt", state: "North Dakota", lat: 46.97, lng: -103.45,
-    img: "https://picsum.photos/seed/theodore-roosevelt-np/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/92/Theodore_Roosevelt_National_Park_north_unit.jpg",
     attractions: [
-      { name: "Badlands Overlooks & Wild Horses", desc: "The North Dakota Badlands glow in fiery sunset hues — spotted with wild free-roaming horses descended from animals turned loose here decades ago.", img: "https://picsum.photos/seed/theodore-horses/600/400" },
-      { name: "Petrified Forest Loop & Bison Herds", desc: "A backcountry hike through eerily silent petrified forest stumps leads to open prairie where 300+ bison graze — one of the most peaceful scenes in any US park.", img: "https://picsum.photos/seed/theodore-bison/600/400" }
+      { name: "Badlands Overlooks & Wild Horses", desc: "The North Dakota Badlands glow in fiery sunset hues — spotted with wild free-roaming horses descended from animals turned loose here decades ago.", img: "https://upload.wikimedia.org/wikipedia/commons/9/92/Theodore_Roosevelt_National_Park_north_unit.jpg" },
+      { name: "Petrified Forest Loop & Bison Herds", desc: "A backcountry hike through eerily silent petrified forest stumps leads to open prairie where 300+ bison graze — one of the most peaceful scenes in any US park.", img: "https://upload.wikimedia.org/wikipedia/commons/9/92/Theodore_Roosevelt_National_Park_north_unit.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "May and September offer pleasant temperatures and active wildlife. July–August can be hot but thunderstorms create dramatic skies over the badlands.",
     nearestCity: "Dickinson, ND (DIK)", flightTime: "~5h (1 stop)", flightCost: "$250–550", flightNote: "Fly to Dickinson (DIK) ~1h drive, or Bismarck (BIS) ~1.5h. Very remote park with minimal services nearby."
   },
   {
     name: "Virgin Islands", state: "U.S. Virgin Islands", lat: 18.33, lng: -64.73,
-    img: "https://picsum.photos/seed/virgin-islands-park/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Trunk_Bay%2C_St._John%2C_USVI.jpg",
     attractions: [
-      { name: "Trunk Bay Underwater Snorkel Trail", desc: "An underwater labeled snorkel trail through living coral and colorful fish in one of the most beautiful turquoise bays in the Caribbean.", img: "https://picsum.photos/seed/trunk-bay/600/400" },
-      { name: "Annaberg Sugar Mill Ruins", desc: "Well-preserved 18th-century sugar plantation ruins on a hillside overlooking the British Virgin Islands — a poignant window into the colonial Caribbean past.", img: "https://picsum.photos/seed/annaberg-mill/600/400" }
+      { name: "Trunk Bay Underwater Snorkel Trail", desc: "An underwater labeled snorkel trail through living coral and colorful fish in one of the most beautiful turquoise bays in the Caribbean.", img: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Trunk_Bay%2C_St._John%2C_USVI.jpg" },
+      { name: "Annaberg Sugar Mill Ruins", desc: "Well-preserved 18th-century sugar plantation ruins on a hillside overlooking the British Virgin Islands — a poignant window into the colonial Caribbean past.", img: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Trunk_Bay%2C_St._John%2C_USVI.jpg" }
     ],
     bestTime: "Dec – Apr", bestTimeTip: "Dry season brings clear turquoise water and trade winds. Hurricane season (June–November) should be avoided. Christmas week is peak with highest prices.",
     nearestCity: "St. Thomas, USVI (STT)", flightTime: "~3.5h (direct)", flightCost: "$250–550", flightNote: "Direct flights NYC to St. Thomas (STT) on JetBlue and American. Take a ferry or water taxi from Charlotte Amalie to St. John."
   },
   {
     name: "Voyageurs", state: "Minnesota", lat: 48.50, lng: -92.88,
-    img: "https://picsum.photos/seed/voyageurs-lakes/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Voyageurs_National_Park_lake.jpg",
     attractions: [
-      { name: "Northern Lights Viewing", desc: "The dark skies and northern latitude of Voyageurs make it one of the best national parks in the lower 48 for aurora borealis viewing from September to March.", img: "https://picsum.photos/seed/northern-lights/600/400" },
-      { name: "Kabetogama Lake Houseboat", desc: "The only national park where you can rent a houseboat and motor to a remote anchorage — sleep over a wilderness lake under stars with loons calling at night.", img: "https://picsum.photos/seed/voyageurs-houseboat/600/400" }
+      { name: "Northern Lights Viewing", desc: "The dark skies and northern latitude of Voyageurs make it one of the best national parks in the lower 48 for aurora borealis viewing from September to March.", img: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Voyageurs_National_Park_lake.jpg" },
+      { name: "Kabetogama Lake Houseboat", desc: "The only national park where you can rent a houseboat and motor to a remote anchorage — sleep over a wilderness lake under stars with loons calling at night.", img: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Voyageurs_National_Park_lake.jpg" }
     ],
     bestTime: "Jun – Sep, Dec – Mar", bestTimeTip: "Summer for waterways and wildlife. Winter offers snowmobiling, ice fishing, and northern lights. The park is 40% water — a boat is required for most experiences.",
     nearestCity: "International Falls, MN (INL)", flightTime: "~5h (multiple stops)", flightCost: "$300–600", flightNote: "Fly to Duluth (DLH) ~2h drive north, or International Falls (INL) small airport. Very remote — both need connections from NYC."
   },
   {
     name: "White Sands", state: "New Mexico", lat: 32.78, lng: -106.17,
-    img: "https://picsum.photos/seed/white-sands-nm/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/9f/White_Sands_National_Park%2C_New_Mexico.jpg",
     attractions: [
-      { name: "Alkali Flat Trail at Sunset", desc: "A 5-mile loop through the heart of the world's largest gypsum dunefield — pure white dunes glowing pink, gold, and violet at dusk in one of Earth's most alien landscapes.", img: "https://picsum.photos/seed/white-sands-sunset/600/400" },
-      { name: "Interdune Boardwalk at Sunrise", desc: "Explore an accessible boardwalk through the dune ecosystem at dawn — desert cottontail rabbits, roadrunners, and kit foxes are often seen in early morning light.", img: "https://picsum.photos/seed/white-sands-sunrise/600/400" }
+      { name: "Alkali Flat Trail at Sunset", desc: "A 5-mile loop through the heart of the world's largest gypsum dunefield — pure white dunes glowing pink, gold, and violet at dusk in one of Earth's most alien landscapes.", img: "https://upload.wikimedia.org/wikipedia/commons/9/9f/White_Sands_National_Park%2C_New_Mexico.jpg" },
+      { name: "Interdune Boardwalk at Sunrise", desc: "Explore an accessible boardwalk through the dune ecosystem at dawn — desert cottontail rabbits, roadrunners, and kit foxes are often seen in early morning light.", img: "https://upload.wikimedia.org/wikipedia/commons/9/9f/White_Sands_National_Park%2C_New_Mexico.jpg" }
     ],
     bestTime: "Mar – May, Sep – Nov", bestTimeTip: "Spring and fall offer mild temperatures. Summer is hot but evenings are magical at sunset. The park occasionally closes for military missile tests — check in advance.",
     nearestCity: "El Paso, TX (ELP)", flightTime: "~4h (1 stop)", flightCost: "$200–420", flightNote: "Fly to El Paso (ELP) ~1.5h drive north, or Albuquerque (ABQ) ~3.5h south. Direct NYC to El Paso available."
   },
   {
     name: "Wind Cave", state: "South Dakota", lat: 43.57, lng: -103.48,
-    img: "https://picsum.photos/seed/wind-cave/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/85/Wind_Cave_National_Park_bison.jpg",
     attractions: [
-      { name: "Natural Entrance Boxwork Cave Tour", desc: "Descend into the world's densest known area of boxwork — a rare honeycomb-like calcite formation covering almost every cave surface in intricate patterns.", img: "https://picsum.photos/seed/boxwork-cave/600/400" },
-      { name: "Bison Prairie at Sunset", desc: "Watch bison, elk, pronghorn, and prairie dogs roam a mixed-grass prairie above the cave — among the most complete Great Plains ecosystems remaining.", img: "https://picsum.photos/seed/wind-cave-bison/600/400" }
+      { name: "Natural Entrance Boxwork Cave Tour", desc: "Descend into the world's densest known area of boxwork — a rare honeycomb-like calcite formation covering almost every cave surface in intricate patterns.", img: "https://upload.wikimedia.org/wikipedia/commons/8/85/Wind_Cave_National_Park_bison.jpg" },
+      { name: "Bison Prairie at Sunset", desc: "Watch bison, elk, pronghorn, and prairie dogs roam a mixed-grass prairie above the cave — among the most complete Great Plains ecosystems remaining.", img: "https://upload.wikimedia.org/wikipedia/commons/8/85/Wind_Cave_National_Park_bison.jpg" }
     ],
     bestTime: "May – Sep", bestTimeTip: "Often combined with nearby Badlands NP in a South Dakota road trip. Summer temperatures are pleasant on the prairie. Cave tours require advance booking.",
     nearestCity: "Rapid City, SD (RAP)", flightTime: "~4–5h (1 stop)", flightCost: "$200–450", flightNote: "Fly to Rapid City (RAP) ~1h drive southwest. Park is adjacent to Custer State Park — plan 2–3 days for the region."
   },
   {
     name: "Wrangell-St. Elias", state: "Alaska", lat: 61.00, lng: -142.00,
-    img: "https://picsum.photos/seed/wrangell-st-elias/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/75/Wrangell-St._Elias_National_Park.jpg",
     attractions: [
-      { name: "Root Glacier Hike — Kennecott Mines", desc: "Hike across the Root Glacier to a perfectly preserved early-20th-century copper mining ghost town — the most intact historic mining complex in the US National Park System.", img: "https://picsum.photos/seed/kennecott-mines/600/400" },
-      { name: "Hubbard Glacier Bay Cruise", desc: "A massive advancing tidewater glacier (7 miles wide!) actively calves enormous icebergs into a fjord — accessible by day tour from Yakutat by small boat.", img: "https://picsum.photos/seed/hubbard-glacier/600/400" }
+      { name: "Root Glacier Hike — Kennecott Mines", desc: "Hike across the Root Glacier to a perfectly preserved early-20th-century copper mining ghost town — the most intact historic mining complex in the US National Park System.", img: "https://upload.wikimedia.org/wikipedia/commons/7/75/Wrangell-St._Elias_National_Park.jpg" },
+      { name: "Hubbard Glacier Bay Cruise", desc: "A massive advancing tidewater glacier (7 miles wide!) actively calves enormous icebergs into a fjord — accessible by day tour from Yakutat by small boat.", img: "https://upload.wikimedia.org/wikipedia/commons/7/75/Wrangell-St._Elias_National_Park.jpg" }
     ],
     bestTime: "Jun – Sep", bestTimeTip: "The largest national park in the US (bigger than Switzerland) with only two dirt roads. Bush plane access is essential for most areas. Kennecott is the main destination.",
     nearestCity: "Anchorage, AK (ANC)", flightTime: "~8h (1 stop)", flightCost: "$400–850", flightNote: "Fly to Anchorage (ANC) then drive ~6h on the McCarthy Road (rough dirt road), or charter a bush plane. Very remote."
@@ -1438,10 +1438,10 @@ const parks = [
   // Non-contiguous parks
   {
     name: "American Samoa", state: "American Samoa", lat: -14.25, lng: -170.68,
-    img: "https://picsum.photos/seed/american-samoa/800/500",
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/ab/National_Park_of_American_Samoa.jpg",
     attractions: [
-      { name: "Ofu Beach & Coral Reef Snorkeling", desc: "Frequently cited as one of the world's most pristine coral reef ecosystems — untouched by mass tourism and home to 950+ species of fish and brilliant coral.", img: "https://picsum.photos/seed/ofu-beach/600/400" },
-      { name: "Mount Alava Ridge Trail & Flying Foxes", desc: "A demanding 7-mile trail to the ridge with panoramic Pacific views, passing through dense tropical rainforest where enormous Samoan flying foxes roost at dusk.", img: "https://picsum.photos/seed/mount-alava/600/400" }
+      { name: "Ofu Beach & Coral Reef Snorkeling", desc: "Frequently cited as one of the world's most pristine coral reef ecosystems — untouched by mass tourism and home to 950+ species of fish and brilliant coral.", img: "https://upload.wikimedia.org/wikipedia/commons/a/ab/National_Park_of_American_Samoa.jpg" },
+      { name: "Mount Alava Ridge Trail & Flying Foxes", desc: "A demanding 7-mile trail to the ridge with panoramic Pacific views, passing through dense tropical rainforest where enormous Samoan flying foxes roost at dusk.", img: "https://upload.wikimedia.org/wikipedia/commons/a/ab/National_Park_of_American_Samoa.jpg" }
     ],
     bestTime: "May – Oct", bestTimeTip: "Dry season runs May–October. The wet season brings heavy rain. The park is the southernmost in the US system — very remote but extraordinary.",
     nearestCity: "Pago Pago, AS (PPG)", flightTime: "~12h+ (multiple stops)", flightCost: "$800–1,800", flightNote: "Fly NYC to Los Angeles or Honolulu, then connect to Pago Pago (PPG). Very remote — plan 3+ days of travel each way."
@@ -1561,20 +1561,37 @@ parks.forEach(park => {
     }
   });
 
-  marker.on('click', function() {
+  function activateMarker(instance) {
     openSidebar(park);
     if (activeMarker) {
       const oldEl = activeMarker.getElement();
       if (oldEl && oldEl.querySelector('.marker-pin')) {
         oldEl.querySelector('.marker-pin').classList.remove('active');
         oldEl.querySelector('.marker-pin').style.background = '';
+        oldEl.querySelector('.marker-pin').style.transform = 'rotate(-45deg) scale(1)';
       }
     }
-    activeMarker = this;
-    const el = this.getElement();
+    activeMarker = instance;
+    const el = instance.getElement();
     if (el && el.querySelector('.marker-pin')) {
       el.querySelector('.marker-pin').classList.add('active');
       el.querySelector('.marker-pin').style.background = '#58a6ff';
+      el.querySelector('.marker-pin').style.transform = 'rotate(-45deg) scale(1.35)';
+    }
+  }
+
+  marker.on('click', function() {
+    activateMarker(this);
+  });
+
+  marker.on('add', function() {
+    const el = marker.getElement();
+    if (el) {
+      el.style.pointerEvents = 'auto';
+      el.addEventListener('click', function(ev) {
+        ev.stopPropagation();
+        activateMarker(marker);
+      });
     }
   });
 });
@@ -1652,8 +1669,19 @@ document.getElementById('map').addEventListener('click', () => {
 });
 
 // ─── INIT ─────────────────────────────────────────────────────
+function addImageFallbacks() {
+  document.addEventListener('error', function(e) {
+    const t = e.target;
+    if (t.tagName !== 'IMG') return;
+    if (t.dataset.fallbackApplied) return;
+    t.dataset.fallbackApplied = '1';
+    t.src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
+  }, true);
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
+  addImageFallbacks();
   initMap();
   addParkMarkers();
 });
